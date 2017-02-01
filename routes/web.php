@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['prefix'	=>	'noticia'],	function(){
+  Route::get('crear', 'NewsController@create');
 });
